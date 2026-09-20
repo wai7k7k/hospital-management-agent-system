@@ -1,0 +1,17 @@
+POST http://localhost:8071/dep/init-schedules
+Content-Type: application/json
+
+{"depId":1,"depName":"耳鼻喉科"}
+### 初始化检查模块菜单
+POST http://localhost:8071/dep/init-menu
+Content-Type: application/json
+
+{}
+
+### 调试查看菜单状态
+GET http://localhost:8071/dep/debug-menu
+### 重置检查模块菜单（删除错误旧行，重新生成标准菜单）
+POST http://localhost:8071/dep/init-menu
+Content-Type: application/json
+
+{}

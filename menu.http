@@ -1,0 +1,8 @@
+POST http://localhost:8071/dep/init-menu
+Content-Type: application/json
+
+### 初始化系统菜单、角色、示例医生账号
+POST http://localhost:8071/dep/init-system-menu
+Content-Type: application/json
+
+{}
