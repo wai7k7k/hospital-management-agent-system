@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xian.woniuxy.reghos.mapper.LftsMapper">
+
+    <resultMap type="xian.woniuxy.domain.Lfts" id="LftsResult">
+    <result property="lftsId" column="lfts_id"/>
+    <result property="patientId" column="patient_id"/>
+    <result property="patientName" column="patient_name"/>
+    <result property="registerId" column="register_id"/>
+    <result property="ALT" column="ALT"/>
+    <result property="ALTReference" column="ALTReference"/>
+    <result property="TP" column="TP"/>
+    <result property="TPReference" column="TPReference"/>
+    <result property="AG" column="AG"/>
+    <result property="AGReference" column="AGReference"/>
+    <result property="TBIL" column="TBIL"/>
+    <result property="TBILReference" column="TBILReference"/>
+    <result property="DBIL" column="DBIL"/>
+    <result property="DBILReference" column="DBILReference"/>
+    <result property="createBy" column="create_by"/>
+    <result property="createTime" column="create_time"/>
+    <result property="updateBy" column="update_by"/>
+    <result property="updateTime" column="update_time"/>
+    <result property="remark" column="remark"/>
+    </resultMap>
+
+
+</mapper>

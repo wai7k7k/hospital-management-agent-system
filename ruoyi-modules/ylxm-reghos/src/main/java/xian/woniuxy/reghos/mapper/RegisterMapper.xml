@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xian.woniuxy.reghos.mapper.RegisterMapper">
+
+    <resultMap type="xian.woniuxy.domain.Register" id="RegisterResult">
+    <result property="registerId" column="register_id"/>
+    <result property="patientId" column="patient_id"/>
+    <result property="userId" column="user_id"/>
+    <result property="userName" column="user_name"/>
+    <result property="registerDate" column="register_date"/>
+    <result property="depId" column="dep_id"/>
+    <result property="depName" column="dep_name"/>
+    <result property="registerPrice" column="register_price"/>
+    <result property="registerState" column="register_state"/>
+    <result property="createBy" column="create_by"/>
+    <result property="createTime" column="create_time"/>
+    <result property="updateBy" column="update_by"/>
+    <result property="updateTime" column="update_time"/>
+    <result property="remark" column="remark"/>
+    </resultMap>
+
+
+</mapper>

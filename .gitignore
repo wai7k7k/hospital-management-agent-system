@@ -10,19 +10,8 @@ target/
 
 # Local runtime and assistant workspace
 .venv/
-**/.venv/
 .env
-**/.env
 .claude/
-.idea/
-**/.idea/
-logs/
-**/logs/
-hs_err_pid*.log
-replay_pid*.log
-__pycache__/
-**/__pycache__/
-*.pyc
 
 # Public repository export should not include seeded database rows or local data dumps.
 doc/sql/*.sql

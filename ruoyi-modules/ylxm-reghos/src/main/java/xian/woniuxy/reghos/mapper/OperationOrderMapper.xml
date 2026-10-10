@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xian.woniuxy.reghos.mapper.OperationOrderMapper">
+
+    <resultMap type="xian.woniuxy.domain.OperationOrder" id="OperationOrderResult">
+    <result property="ooId" column="oo_id"/>
+    <result property="operationId" column="operation_id"/>
+    <result property="userId" column="user_id"/>
+    <result property="userName" column="user_name"/>
+    <result property="operationPrice" column="operation_price"/>
+    <result property="ooDate" column="oo_date"/>
+    <result property="operationDate" column="operation_date"/>
+    <result property="opertationConfirm" column="opertation_confirm"/>
+    <result property="registerId" column="register_id"/>
+    <result property="enterId" column="enter_id"/>
+    <result property="createBy" column="create_by"/>
+    <result property="createTime" column="create_time"/>
+    <result property="updateBy" column="update_by"/>
+    <result property="updateTime" column="update_time"/>
+    <result property="remark" column="remark"/>
+    </resultMap>
+
+
+</mapper>

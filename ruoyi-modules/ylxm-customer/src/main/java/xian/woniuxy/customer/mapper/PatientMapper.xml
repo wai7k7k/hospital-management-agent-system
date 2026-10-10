@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xian.woniuxy.customer.mapper.PatientMapper">
+
+    <resultMap type="xian.woniuxy.domain.Patient" id="PatientResult">
+    <result property="patientId" column="patient_id"/>
+    <result property="patientPhone" column="patient_phone"/>
+    <result property="patientPassword" column="patient_password"/>
+    <result property="patientName" column="patient_name"/>
+    <result property="patientSex" column="patient_sex"/>
+    <result property="patientCardId" column="patient_card_id"/>
+    <result property="patientPhoto" column="patient_photo"/>
+    <result property="patientBirthday" column="patient_birthday"/>
+    <result property="patientRegisterDate" column="patient_register_date"/>
+    <result property="patientMoney" column="patient_money"/>
+    <result property="patientTest" column="patient_test"/>
+    <result property="createBy" column="create_by"/>
+    <result property="createTime" column="create_time"/>
+    <result property="updateBy" column="update_by"/>
+    <result property="updateTime" column="update_time"/>
+    <result property="remark" column="remark"/>
+    </resultMap>
+    <select id="selectByPatientName" resultType="xian.woniuxy.domain.Patient">
+        select * from patient where patient_name=#{ patientName}
+    </select>
+
+
+</mapper>

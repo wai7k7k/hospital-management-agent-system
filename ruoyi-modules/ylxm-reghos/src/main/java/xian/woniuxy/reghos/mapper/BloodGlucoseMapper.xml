@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xian.woniuxy.reghos.mapper.BloodGlucoseMapper">
+
+    <resultMap type="xian.woniuxy.domain.BloodGlucose" id="BloodGlucoseResult">
+    <result property="bgId" column="bg_id"/>
+    <result property="patientId" column="patient_id"/>
+    <result property="patientName" column="patient_name"/>
+    <result property="registerId" column="register_id"/>
+    <result property="GLU" column="g_l_u"/>
+    <result property="gluReference" column="GLU_Reference"/>
+    <result property="PH" column="p_h"/>
+    <result property="phReference" column="PH_Reference"/>
+    <result property="createBy" column="create_by"/>
+    <result property="createTime" column="create_time"/>
+    <result property="updateBy" column="update_by"/>
+    <result property="updateTime" column="update_time"/>
+    <result property="remark" column="remark"/>
+    </resultMap>
+
+
+</mapper>

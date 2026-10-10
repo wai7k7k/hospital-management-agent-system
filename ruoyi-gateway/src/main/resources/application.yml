@@ -1,0 +1,29 @@
+# Tomcat
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+# Spring
+spring:
+  application:
+    name: ruoyi-gateway
+  profiles:
+    active: dev
+
+---
+spring:
+  cloud:
+    nacos:
+      # 这里写你真实的本地 Nacos！
+      server-addr: localhost:8848
+      discovery:
+        group: DEFAULT_GROUP
+        namespace: dev
+      config:
+        group: DEFAULT_GROUP
+        namespace: dev
+  config:
+    import:
+      - optional:nacos:application-common.yml
+      - optional:nacos:ruoyi-gateway.yml

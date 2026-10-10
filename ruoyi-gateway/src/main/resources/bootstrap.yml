@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ruoyi-gateway
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        namespace: dev
+      config:
+        namespace: dev
+        file-extension: yaml
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: ${REDIS_PASSWORD:}
+    database: 0
+
+redisson:
+  singleServerConfig:
+    address: redis://127.0.0.1:6379

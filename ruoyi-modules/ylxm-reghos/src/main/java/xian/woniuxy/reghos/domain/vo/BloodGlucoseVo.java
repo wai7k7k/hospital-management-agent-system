@@ -1,0 +1,79 @@
+package xian.woniuxy.reghos.domain.vo;
+
+import com.alibaba.excel.annotation.ExcelIgnoreUnannotated;
+import com.alibaba.excel.annotation.ExcelProperty;
+import com.ruoyi.common.excel.annotation.ExcelDictFormat;
+import com.ruoyi.common.excel.convert.ExcelDictConvert;
+import lombok.Data;
+import java.util.Date;
+
+
+
+/**
+ * 血糖结果;视图对象
+ *
+ * @author G
+ * @date 2022-08-23
+ */
+@Data
+@ExcelIgnoreUnannotated
+public class BloodGlucoseVo {
+
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * 血糖唯一id
+     */
+    @ExcelProperty(value = "血糖唯一id")
+    private Long bgId;
+
+    /**
+     * 病人id
+     */
+    @ExcelProperty(value = "病人id")
+    private Long patientId;
+
+    /**
+     * 病人姓名
+     */
+    @ExcelProperty(value = "病人姓名")
+    private String patientName;
+
+    /**
+     * 挂号id
+     */
+    @ExcelProperty(value = "挂号id")
+    private Long registerId;
+
+    /**
+     * 葡萄糖
+     */
+    @ExcelProperty(value = "葡萄糖")
+    private String GLU;
+
+    /**
+     * 葡萄糖参考范围
+     */
+    @ExcelProperty(value = "葡萄糖参考范围")
+    private String gluReference;
+
+    /**
+     * 酸碱度
+     */
+    @ExcelProperty(value = "酸碱度")
+    private String PH;
+
+    /**
+     * 酸碱度参考范围
+     */
+    @ExcelProperty(value = "酸碱度参考范围")
+    private String phReference;
+
+    /**
+     * 备注
+     */
+    @ExcelProperty(value = "备注")
+    private String remark;
+
+
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.ScheduleMapper">
+
+    <resultMap type="com.ruoyi.system.api.domain.Schedule" id="ScheduleResult">
+        <result property="scheduleId" column="schedule_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="userName" column="user_name"/>
+        <result property="depId" column="dep_id"/>
+        <result property="depName" column="dep_name"/>
+        <result property="avatar" column="avatar"/>
+        <result property="scheduleDate" column="schedule_date"/>
+        <result property="scheduleTime" column="schedule_time"/>
+        <result property="scheduleNum" column="schedule_num"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+
+</mapper>
